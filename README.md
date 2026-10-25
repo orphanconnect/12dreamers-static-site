@@ -33,6 +33,6 @@ Bible verses are from the Berean Standard Bible, which is in the public domain. 
 
 `.github/workflows/link-check.yml` runs [lychee](https://github.com/lycheeverse/lychee) on the first day of each month, and when someone starts it by hand. If a link does not return success, the workflow opens an issue titled “Broken links on 12 Dreamers”, or comments on the open issue with that title.
 
-Same-site URLs such as `https://12dreamers.com/og.png` are remapped to the files in the repo so the check does not depend on the live deploy. `tel:` links are skipped.
+Same-site URLs such as `https://12dreamers.com/og.png` are remapped to the files in the repo so the check does not depend on the live deploy. Root-relative links such as `/css/styles.css` on the missing-page file are checked from the repo root. `tel:` links are skipped.
 
 LearnEnglish Kids (`https://learnenglishkids.britishcouncil.org/`) stays on the page. On 2026-10-25 the public site loaded as the British Council children’s homepage, but Akamai answered this checker with 403 Access Denied, so that one URL is listed in `.lycheeignore` to avoid a false broken-link alarm.

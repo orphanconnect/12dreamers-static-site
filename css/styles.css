@@ -23,6 +23,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Clears the sticky section menu. One offset for every in-page link, including #help-now. */
+  scroll-padding-top: 5.75rem;
 }
 
 body {
@@ -251,7 +253,6 @@ main {
 
 section {
   margin-top: 2.2rem;
-  scroll-margin-top: 7rem;
 }
 
 h2 {
@@ -536,13 +537,6 @@ footer p {
     height: 1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-  }
-}
-
-@media (min-width: 721px) {
-  .section-nav {
-    flex-wrap: wrap;
-    overflow-x: visible;
   }
 }
 
