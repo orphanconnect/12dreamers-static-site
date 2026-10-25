@@ -1,0 +1,81 @@
+name: Check links
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:00 UTC on the first day of each month
+    - cron: "0 6 1 * *"
+
+jobs:
+  lychee:
+    name: External links
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Link check
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          output: lychee/out.md
+          args: >-
+            --no-progress
+            --verbose
+            --max-retries 2
+            --timeout 25
+            --max-concurrency 8
+            --exclude "^tel:"
+            --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            --header "Accept: text/html"
+            --remap "https://12dreamers.com/ ${{ github.workspace }}/"
+            --root-dir "${{ github.workspace }}"
+            "./**/*.html"
+            "./**/*.md"
+
+      - name: Open or update an issue
+        if: steps.lychee.outputs.exit_code != 0
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let report = 'The link check failed before it could write a report.';
+            if (fs.existsSync('lychee/out.md')) {
+              report = fs.readFileSync('lychee/out.md', 'utf8').slice(0, 60000);
+            }
+            const title = 'Broken links on 12 Dreamers';
+            const body = [
+              'A scheduled check of this static site found links that did not return success.',
+              '',
+              report
+            ].join('\n');
+            const { data } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 50
+            });
+            const existing = data.find((issue) => issue.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              });
+            }
+
+      - name: Fail when links are broken
+        if: steps.lychee.outputs.exit_code != 0
+        run: exit 1

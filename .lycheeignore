@@ -1,0 +1,5 @@
+# LearnEnglish Kids is up, but Akamai returns 403 Access Denied to this
+# network and to lychee's HTTP client (checked 2026-10-25). A normal fetch of
+# https://learnenglishkids.britishcouncil.org/ shows the British Council page
+# "Home | LearnEnglish Kids" with free games, songs, and stories.
+https://learnenglishkids.britishcouncil.org/
