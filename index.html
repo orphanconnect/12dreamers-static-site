@@ -1,282 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12 Dreamers - To My Son</title>
-    <style>
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            margin: 0; 
-            padding: 20px; 
-            background: linear-gradient(to bottom, #e0f7fa, #fffde7); 
-            color: #333; 
-            line-height: 1.6; 
-        }
-        h1 { 
-            text-align: center; 
-            color: #ff4081; 
-            font-size: 2.8em; 
-        }
-        .heart { color: #e74c3c; }
-        .section-desc { 
-            font-style: italic; 
-            text-align: center; 
-            margin-bottom: 30px; 
-            color: #555; 
-            font-size: 1.1em; 
-        }
-        .resource-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 25px; 
-        }
-        .resource-card { 
-            background: white; 
-            border-radius: 20px; 
-            padding: 25px; 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12); 
-            text-decoration: none; 
-            color: inherit; 
-            transition: all 0.3s ease; 
-            border: 3px solid transparent;
-        }
-        .resource-card:hover { 
-            transform: translateY(-10px) scale(1.03); 
-            box-shadow: 0 15px 30px rgba(0,0,0,0.18); 
-            border-color: #ffeb3b;
-        }
-        .resource-card h3 { 
-            margin: 15px 0 10px; 
-            color: #1976d2; 
-            font-size: 1.4em;
-        }
-        .emoji { 
-            font-size: 3.5em; 
-            display: block; 
-            text-align: center; 
-            margin-bottom: 15px; 
-        }
-        .to-my-son { 
-            background: #fff0f5; 
-            padding: 40px; 
-            border-radius: 25px; 
-            margin: 40px 0; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border: 4px solid #ff4081;
-        }
-        footer { 
-            text-align: center; 
-            margin-top: 60px; 
-            font-size: 1em; 
-            color: #777; 
-        }
-        .devotional-btn {
-            background: linear-gradient(#ff4081, #f50057);
-            color: white; 
-            padding: 18px 40px; 
-            border-radius: 50px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            font-size: 1.2em;
-            display: inline-block;
-            box-shadow: 0 6px 15px rgba(245, 0, 87, 0.3);
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12 Dreamers — You are loved</title>
+  <meta name="description" content="Free stories, math, science, and coding for kids, plus a daily Bible verse. No accounts, ads, or tracking.">
+  <meta name="theme-color" content="#f6f0e6">
+  <link rel="canonical" href="https://12dreamers.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:site_name" content="12 Dreamers">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="12 Dreamers — You are loved">
+  <meta property="og:description" content="Free stories, math, science, and coding for kids, plus a daily Bible verse. No accounts, ads, or tracking.">
+  <meta property="og:url" content="https://12dreamers.com/">
+  <meta property="og:image" content="https://12dreamers.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="12 Dreamers. You are loved. A free learning place for kids.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="12 Dreamers — You are loved">
+  <meta name="twitter:description" content="Free stories, math, science, and coding for kids, plus a daily Bible verse. No accounts, ads, or tracking.">
+  <meta name="twitter:image" content="https://12dreamers.com/og.png">
+  <meta name="twitter:image:alt" content="12 Dreamers. You are loved. A free learning place for kids.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="sticky-bar">
+    <a class="brand" href="#top">12 Dreamers</a>
+    <nav class="section-nav" aria-label="On this page">
+      <a href="#today">Today</a>
+      <a href="#reading">Reading</a>
+      <a href="#english">English</a>
+      <a href="#math">Math</a>
+      <a href="#science">Science</a>
+      <a href="#coding">Coding</a>
+      <a href="#ai">AI</a>
+      <a href="#feelings">Feelings</a>
+      <a href="#faith">Faith</a>
+      <a href="#languages">Languages</a>
+      <a href="#grown-ups">Grown-ups</a>
+    </nav>
+  </div>
 
-    <h1>12 Dreamers <span class="heart">❤️</span></h1>
-    <p style="text-align: center; font-size: 1.3em; max-width: 900px; margin: 20px auto; color: #444;">
-        A happy place full of love and learning — just for you!
-    </p>
+  <header class="wrap hero" id="top">
+    <h1>12 Dreamers <span class="heart" aria-hidden="true">♥</span></h1>
+    <p class="lede">You are loved. This is a free, quiet shelf of stories, games, and lessons for any child. It is here for a hard season, a new home, or an ordinary afternoon. Nothing on this page asks you to sign in, and nothing here watches you.</p>
+    <p class="help-jump"><a href="#help-now">If you need help now, there are people to call.</a></p>
+    <p class="fine">School levels are written both ways. For example: Ages 7–11 · US grades 2–5 · UK KS2.</p>
+    <fieldset class="ages">
+      <legend>Show ideas for</legend>
+      <label><input type="radio" name="age" value="all" checked> <span>All ages</span></label>
+      <label><input type="radio" name="age" value="little"> <span>Little ones, ages 3 to 6</span></label>
+      <label><input type="radio" name="age" value="big"> <span>Big kids, ages 7 to 12</span></label>
+      <label><input type="radio" name="age" value="teen"> <span>Teens, ages 13 and up</span></label>
+    </fieldset>
+  </header>
 
-    <!-- ====================== TO MY SON ❤️ ====================== -->
-    <section id="to-my-son" class="to-my-son">
-        <h2 style="text-align: center; color: #d81b60;">💌 To My Son ❤️</h2>
-        <p class="section-desc">Every single day I think of you and pray you grow strong, kind, brave, and super smart.</p>
-        
-        <div style="text-align: center; margin: 35px 0;">
-            <a href="https://docs.google.com/document/d/1yUFBybT58QtuYSjv2Atf_u7cFGTR4Y-_/edit" 
-               target="_blank" 
-               class="devotional-btn">
-                📖 Open Your Daily Devotional
-            </a>
-        </div>
-        
-        <p style="text-align: center; font-style: italic; font-size: 1.15em; color: #c2185b;">
-            You are my greatest blessing and my biggest dream. Keep shining, my boy!
+  <main id="main" class="wrap">
+    <section id="today" aria-labelledby="today-title">
+      <h2 id="today-title">Today</h2>
+      <article class="verse" aria-labelledby="verse-title">
+        <p class="kicker" id="verse-when">A verse for today</p>
+        <h3 id="verse-title">Verse and devotional of the day</h3>
+        <blockquote>
+          <p id="verse-text">We love because He first loved us.</p>
+        </blockquote>
+        <p class="credit"><span id="verse-ref">1 John 4:19</span> · Berean Standard Bible</p>
+        <p class="encouragement" id="verse-note">You are loved. That was true before you did anything at all.</p>
+      </article>
+      <article class="today-card" aria-labelledby="activities-title">
+        <h3 id="activities-title">Today's activities</h3>
+        <p class="section-intro">One reading idea, one math idea, and one fun or creative idea. They change with the date on this device. Tap “I did it!” if you finish. The star stays in this browser and is not sent anywhere.</p>
+        <p id="star-summary" class="star-summary" hidden>
+          <span id="star-icons" class="star-icons" aria-hidden="true">☆☆☆</span>
+          <span id="star-count">0 of 3 stars today. Saved only on this device.</span>
         </p>
-    </section>
-
-    <!-- ====================== ENGLISH FUN ====================== -->
-    <section id="english-fun" class="resources-section">
-        <h2 style="text-align: center; color: #43a047;">📚 English Fun</h2>
-        <p class="section-desc">Games, stories, songs and reading adventures to help you become amazing at English ❤️</p>
-        <div class="resource-grid">
-
-            <a href="https://learnenglishkids.britishcouncil.org/" target="_blank" class="resource-card">
-                <span class="emoji">🎵</span>
-                <h3>LearnEnglish Kids</h3>
-                <p>Songs, stories, games and activities made specially for kids like you</p>
-            </a>
-
-            <a href="https://www.bbc.co.uk/bitesize/subjects/zv48q6f" target="_blank" class="resource-card">
-                <span class="emoji">📖</span>
-                <h3>BBC Bitesize KS2 English</h3>
-                <p>Fun stories, spelling, grammar and reading practice</p>
-            </a>
-
-            <a href="https://www.bbc.co.uk/bitesize/subjects/z3kw2hv" target="_blank" class="resource-card">
-                <span class="emoji">✍️</span>
-                <h3>BBC Bitesize KS3 English</h3>
-                <p>Reading, writing and grammar to help you get even stronger</p>
-            </a>
-
-            <a href="https://www.starfall.com/" target="_blank" class="resource-card">
-                <span class="emoji">🌟</span>
-                <h3>Starfall</h3>
-                <p>Beautiful phonics and early reading games with bright animations</p>
-            </a>
-
-            <a href="https://pbskids.org/" target="_blank" class="resource-card">
-                <span class="emoji">🦸</span>
-                <h3>PBS Kids</h3>
-                <p>Literacy games with your favourite characters</p>
-            </a>
-
-            <a href="https://www.fredisalearns.com/" target="_blank" class="resource-card">
-                <span class="emoji">🎬</span>
-                <h3>FredisaLearns</h3>
-                <p>Animated lessons, songs and games for kids learning English</p>
-            </a>
-
-            <a href="https://www.abcya.com/" target="_blank" class="resource-card">
-                <span class="emoji">🎮</span>
-                <h3>ABCya</h3>
-                <p>Language arts games, typing and reading fun</p>
-            </a>
-
-            <a href="https://www.funbrain.com/" target="_blank" class="resource-card">
-                <span class="emoji">🧠</span>
-                <h3>Funbrain</h3>
-                <p>Reading stories, comics and language games</p>
-            </a>
-
+        <div class="days">
+          <article class="day" id="day-reading">
+            <p class="kicker">Reading</p>
+            <h4><a id="day-reading-link" href="https://storylineonline.net/" target="_blank" rel="noopener noreferrer"><span class="day-title">Listen to a picture book</span><span class="visually-hidden"> Opens in a new tab.</span></a></h4>
+            <p id="day-reading-text">Pick a story on Storyline Online and listen while you look at the pictures.</p>
+            <button type="button" class="did-it" data-slot="reading" data-id="storyline" aria-pressed="false" hidden>
+              <span class="starlet" aria-hidden="true">☆</span>
+              <span class="did-label">I did it!</span>
+              <span class="visually-hidden did-name"> Listen to a picture book.</span>
+            </button>
+          </article>
+          <article class="day" id="day-math">
+            <p class="kicker">Math</p>
+            <h4><a id="day-math-link" href="https://www.mathlearningcenter.org/apps" target="_blank" rel="noopener noreferrer"><span class="day-title">Build numbers on a math app</span><span class="visually-hidden"> Opens in a new tab.</span></a></h4>
+            <p id="day-math-text">Open a Math Learning Center app, such as Number Frames or the Geoboard, and make a pattern.</p>
+            <button type="button" class="did-it" data-slot="math" data-id="mlc" aria-pressed="false" hidden>
+              <span class="starlet" aria-hidden="true">☆</span>
+              <span class="did-label">I did it!</span>
+              <span class="visually-hidden did-name"> Build numbers on a math app.</span>
+            </button>
+          </article>
+          <article class="day" id="day-fun">
+            <p class="kicker">Fun</p>
+            <h4><a id="day-fun-link" href="https://quickdraw.withgoogle.com/" target="_blank" rel="noopener noreferrer"><span class="day-title">Draw for a guessing computer</span><span class="visually-hidden"> Opens in a new tab.</span></a></h4>
+            <p id="day-fun-text">On Quick, Draw!, doodle a few objects and see what the computer guesses.</p>
+            <button type="button" class="did-it" data-slot="fun" data-id="quickdraw" aria-pressed="false" hidden>
+              <span class="starlet" aria-hidden="true">☆</span>
+              <span class="did-label">I did it!</span>
+              <span class="visually-hidden did-name"> Draw for a guessing computer.</span>
+            </button>
+          </article>
         </div>
+      </article>
+      <noscript>
+        <p class="note">The verse above stays on one passage unless JavaScript is on. The three activities still work as links. Stars need JavaScript, and they still never leave this device.</p>
+      </noscript>
+      <p id="status" class="visually-hidden" aria-live="polite"></p>
     </section>
 
-    <!-- ====================== MATH MAGIC ====================== -->
-    <section id="math-magic" class="resources-section">
-        <h2 style="text-align: center; color: #ff9800;">🔢 Math Magic</h2>
-        <p class="section-desc">Games and activities that make numbers exciting, colorful and easy to learn ❤️</p>
-        <div class="resource-grid">
-
-            <a href="https://www.bbc.co.uk/bitesize/subjects/z826n39" target="_blank" class="resource-card">
-                <span class="emoji">🎲</span>
-                <h3>BBC Bitesize Maths</h3>
-                <p>Videos, games and practice perfect for your age</p>
-            </a>
-
-            <a href="https://mathsframe.co.uk/" target="_blank" class="resource-card">
-                <span class="emoji">🚀</span>
-                <h3>Mathsframe</h3>
-                <p>Hundreds of free KS2 maths games and worksheets</p>
-            </a>
-
-            <a href="https://www.mathplayground.com/" target="_blank" class="resource-card">
-                <span class="emoji">🧩</span>
-                <h3>Math Playground</h3>
-                <p>Logic games, word problems and fun challenges</p>
-            </a>
-
-            <a href="https://www.coolmath4kids.com/" target="_blank" class="resource-card">
-                <span class="emoji">🌈</span>
-                <h3>CoolMath4Kids</h3>
-                <p>Colourful games that make maths feel like playtime</p>
-            </a>
-
-            <a href="https://nrich.maths.org/" target="_blank" class="resource-card">
-                <span class="emoji">🧠</span>
-                <h3>NRICH Maths</h3>
-                <p>Brain-teasing puzzles from Cambridge University</p>
-            </a>
-
-            <a href="https://www.khanacademy.org/math" target="_blank" class="resource-card">
-                <span class="emoji">📊</span>
-                <h3>Khan Academy Math</h3>
-                <p>Clear video lessons and exercises (start at your level)</p>
-            </a>
-
-            <a href="https://www.topmarks.co.uk/maths-games/hit-the-button" target="_blank" class="resource-card">
-                <span class="emoji">⚡</span>
-                <h3>Hit the Button</h3>
-                <p>Quick fire times tables and number facts game</p>
-            </a>
-
-            <a href="https://www.prodigygame.com/" target="_blank" class="resource-card">
-                <span class="emoji">🐉</span>
-                <h3>Prodigy Math</h3>
-                <p>Adventure game where you battle with maths skills</p>
-            </a>
-
-            <a href="https://www.abcya.com/grades/3-4/math" target="_blank" class="resource-card">
-                <span class="emoji">🎲</span>
-                <h3>ABCya Math Games</h3>
-                <p>Fun maths games for different grade levels</p>
-            </a>
-
-        </div>
+    <section id="reading" data-section aria-labelledby="reading-title">
+      <h2 id="reading-title">Reading library</h2>
+      <p class="section-intro">Picture books, read-alouds, and stories you can hear. Several of these also come in other languages.</p>
+      <div class="grid">
+          <a class="card" data-ages="little big" href="https://storylineonline.net/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">📚</span>
+            <h3>Storyline Online</h3>
+            <p>Actors read picture books out loud while you look at the art.</p>
+            <p class="level">Ages 3–10 · US grades pre-K–4 · UK EYFS–KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 3–10</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big" href="https://www.uniteforliteracy.com/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">📖</span>
+            <h3>Unite for Literacy</h3>
+            <p>Short picture books you can read and hear, including in many home languages.</p>
+            <p class="level">Ages 3–8 · US grades pre-K–2 · UK EYFS–KS1</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 3–8</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://storyweaver.org.in/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🪶</span>
+            <h3>StoryWeaver</h3>
+            <p>Thousands of free stories from Pratham. Pick a language and a reading level.</p>
+            <p class="level">Ages 3–12 · US grades pre-K–6 · UK EYFS–KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 3–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://globalstorybooks.net/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🌍</span>
+            <h3>Global Storybooks</h3>
+            <p>Illustrated stories from around the world, free to read and listen to.</p>
+            <p class="level">Ages 5–14 · US grades K–8 · UK KS1–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big" href="https://bloomlibrary.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🌸</span>
+            <h3>Bloom Library</h3>
+            <p>Free books you can read offline later, in lots of languages.</p>
+            <p class="level">Ages 3–12 · US grades pre-K–6 · UK EYFS–KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 3–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://libbyapp.com/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">📕</span>
+            <h3>Libby</h3>
+            <p>Borrow e-books from a public library. A grown-up needs a free library card.</p>
+            <p class="level">Ages 5–18 · US grades K–12 · UK KS1–KS5</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 5–18</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little" href="https://abc.duolingo.com/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🔤</span>
+            <h3>Duolingo ABC</h3>
+            <p>A free reading app for early readers. A grown-up downloads it.</p>
+            <p class="level">Ages 3–8 · US grades pre-K–2 · UK EYFS–KS1</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-app">App</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 3–8</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
     </section>
 
-    <!-- ====================== AI FUN FOR LEARNING ====================== -->
-    <section id="ai-fun" class="resources-section">
-        <h2 style="text-align: center; color: #9c27b0;">🤖 AI Fun for Learning</h2>
-        <p class="section-desc">Safe and exciting AI tools to help you explore, ask questions, create stories and understand things better (use with mom or dad at first) ❤️</p>
-        <div class="resource-grid">
-
-            <a href="https://www.khanacademy.org/" target="_blank" class="resource-card">
-                <span class="emoji">🧑‍🏫</span>
-                <h3>Khan Academy (with Khanmigo)</h3>
-                <p>Free lessons in math, reading & more + AI tutor that guides you step-by-step</p>
-            </a>
-
-            <a href="https://kidgeni.com/" target="_blank" class="resource-card">
-                <span class="emoji">✨</span>
-                <h3>KidGeni</h3>
-                <p>AI for creative writing, story starters and fun imagination activities</p>
-            </a>
-
-            <a href="https://www.google.com/socratic" target="_blank" class="resource-card">
-                <span class="emoji">📸</span>
-                <h3>Socratic by Google</h3>
-                <p>Take a photo of a question and get helpful explanations (great for homework)</p>
-            </a>
-
-            <a href="https://www.bbc.co.uk/bitesize" target="_blank" class="resource-card">
-                <span class="emoji">📺</span>
-                <h3>BBC Bitesize (with games)</h3>
-                <p>Interactive lessons across subjects with AI-like quick help features</p>
-            </a>
-
-            <a href="https://teachablemachine.withgoogle.com/" target="_blank" class="resource-card">
-                <span class="emoji">🤖</span>
-                <h3>Google Teachable Machine</h3>
-                <p>Train your own simple AI with pictures or sounds — super fun experiment!</p>
-            </a>
-
-            <a href="https://chatgpt.com/" target="_blank" class="resource-card">
-                <span class="emoji">💬</span>
-                <h3>ChatGPT (with parent help)</h3>
-                <p>Ask questions, get explanations or help with stories and ideas</p>
-            </a>
-
-        </div>
+    <section id="english" data-section aria-labelledby="english-title">
+      <h2 id="english-title">English</h2>
+      <p class="section-intro">Songs, stories, and word play. Levels name both school systems, for example Ages 7–11 · US grades 2–5 · UK KS2.</p>
+      <div class="grid">
+          <a class="card" data-ages="little big" href="https://learnenglishkids.britishcouncil.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🎵</span>
+            <h3>LearnEnglish Kids</h3>
+            <p>Songs, stories, and games from the British Council for children learning English.</p>
+            <p class="level">Ages 5–12 · US grades K–6 · UK KS1–KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little" href="https://pbskids.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🦸</span>
+            <h3>PBS Kids</h3>
+            <p>Stories and literacy games with familiar characters. The site is made for children.</p>
+            <p class="level">Ages 3–8 · US grades pre-K–2 · UK EYFS–KS1</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 3–8</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big" href="https://www.bbc.co.uk/bitesize/subjects/zv48q6f" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">✏️</span>
+            <h3>BBC Bitesize English</h3>
+            <p>Reading, spelling, and writing for this age band. One English shelf, so it is not listed again.</p>
+            <p class="level">Ages 7–11 · US grades 2–5 · UK KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 7–11</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
     </section>
 
-    <footer>
-        Made with lots of love for my son • 12 Dreamers • 2026
-    </footer>
+    <section id="math" data-section aria-labelledby="math-title">
+      <h2 id="math-title">Math</h2>
+      <p class="section-intro">Called math in the US and maths in the UK. The lessons below are free to start. One Khan Academy card covers the free lessons. Khanmigo, the AI tutor, is separate and paid.</p>
+      <div class="grid">
+          <a class="card" data-ages="little" href="https://learn.khanacademy.org/khan-academy-kids/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🐣</span>
+            <h3>Khan Academy Kids</h3>
+            <p>A free app for early math, reading, and feelings. A grown-up installs it. This is separate from the Khan Academy lesson site.</p>
+            <p class="level">Ages 2–8 · US grades pre-K–2 · UK EYFS–KS1</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-app">App</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 2–8</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://www.khanacademy.org/math" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">📐</span>
+            <h3>Khan Academy</h3>
+            <p>Free lessons you can start without an account. Khanmigo, the AI tutor inside Khan Academy, is paid and a grown-up sets it up.</p>
+            <p class="level">Ages 5–18 · US grades K–12 · UK KS1–KS5</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–18</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://www.zearn.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🔢</span>
+            <h3>Zearn</h3>
+            <p>Free math lessons with no ads for students. A grown-up makes the free account.</p>
+            <p class="level">Ages 5–14 · US grades K–8 · UK KS1–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 5–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big" href="https://www.mathlearningcenter.org/apps" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🧩</span>
+            <h3>Math Learning Center</h3>
+            <p>Free web apps for counting, fractions, clocks, and shapes. No account and no ads.</p>
+            <p class="level">Ages 4–11 · US grades pre-K–5 · UK EYFS–KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 4–11</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://www.mathigon.org/polypad" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🔷</span>
+            <h3>Polypad</h3>
+            <p>A math playground for patterns, numbers, and shapes. You can play without an account.</p>
+            <p class="level">Ages 8–16 · US grades 3–10 · UK KS2–KS4</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 8–16</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://nrich.maths.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🧠</span>
+            <h3>NRICH</h3>
+            <p>Puzzles from the University of Cambridge. Choose Early Years, Primary, or Secondary on the site.</p>
+            <p class="level">Ages 5–18 · US grades K–12 · UK EYFS–KS5</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–18</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big" href="https://mathsframe.co.uk/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🎲</span>
+            <h3>Mathsframe</h3>
+            <p>Free primary maths games. Some worksheets and extra features are paid, so stay with the free games.</p>
+            <p class="level">Ages 5–11 · US grades K–5 · UK KS1–KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-paid">Some extras paid</li><li class="tag-age">Ages 5–11</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big" href="https://www.bbc.co.uk/bitesize/subjects/z826n39" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">📺</span>
+            <h3>BBC Bitesize Maths</h3>
+            <p>Videos and practice for this age band. In the UK this subject is called maths.</p>
+            <p class="level">Ages 7–11 · US grades 2–5 · UK KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 7–11</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
+    </section>
 
+    <section id="science" data-section aria-labelledby="science-title">
+      <h2 id="science-title">Science</h2>
+      <p class="section-intro">Look, try, and ask what would happen if you changed one thing.</p>
+      <div class="grid">
+          <a class="card" data-ages="big teen" href="https://spaceplace.nasa.gov/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🚀</span>
+            <h3>NASA Space Place</h3>
+            <p>Space, Earth, and sky explained for kids, with games and articles from NASA.</p>
+            <p class="level">Ages 7–12 · US grades 2–6 · UK KS2–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 7–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://phet.colorado.edu/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🔬</span>
+            <h3>PhET</h3>
+            <p>Free science and math simulations from the University of Colorado. Try one and see what happens when you change it.</p>
+            <p class="level">Ages 8–18 · US grades 3–12 · UK KS2–KS5</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 8–18</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
+    </section>
+
+    <section id="coding" data-section aria-labelledby="coding-title">
+      <h2 id="coding-title">Coding</h2>
+      <p class="section-intro">Tell a computer what to do, one block at a time.</p>
+      <div class="grid">
+          <a class="card" data-ages="little" href="https://www.scratchjr.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🐱</span>
+            <h3>ScratchJr</h3>
+            <p>Make a simple story with blocks. It is an app, so a grown-up installs it.</p>
+            <p class="level">Ages 5–7 · US grades K–2 · UK KS1</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-app">App</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 5–7</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🎮</span>
+            <h3>Scratch</h3>
+            <p>Build games and animations. If you are under 13, a grown-up creates the account. You can also look at projects first.</p>
+            <p class="level">Ages 8–16 · US grades 3–10 · UK KS2–KS4</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 8–16</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://code.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">💻</span>
+            <h3>Code.org</h3>
+            <p>Hour of Code puzzles and courses from pre-readers up. You can try one without an account. Under 13, a grown-up sets up an account if you want to save work.</p>
+            <p class="level">Ages 4–18 · US grades pre-K–12 · UK EYFS–KS5</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 4–18</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://blockly.games/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🧱</span>
+            <h3>Blockly Games</h3>
+            <p>Short puzzles that teach coding ideas. No account.</p>
+            <p class="level">Ages 7–14 · US grades 2–8 · UK KS2–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 7–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
+    </section>
+
+    <section id="ai" data-section aria-labelledby="ai-title">
+      <h2 id="ai-title">Kid-safe AI</h2>
+      <p class="section-intro">Tools for learning how AI works, or for making something small with a grown-up nearby.</p>
+      <div class="grid">
+          <a class="card" data-ages="big teen" href="https://teachablemachine.withgoogle.com/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🤖</span>
+            <h3>Teachable Machine</h3>
+            <p>Train a tiny model with pictures or sounds in the browser. A grown-up should be there the first time, because it can use the camera or microphone.</p>
+            <p class="level">Ages 8–14 · US grades 3–8 · UK KS2–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 8–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://quickdraw.withgoogle.com/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">✏️</span>
+            <h3>Quick, Draw!</h3>
+            <p>Draw an object and watch a computer try to guess it. A playful way to see how a model learns from examples.</p>
+            <p class="level">Ages 6–14 · US grades 1–8 · UK KS1–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 6–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big" href="https://studio.code.org/courses/oceans/units/1/lessons/1/levels/1" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🌊</span>
+            <h3>AI for Oceans</h3>
+            <p>A Code.org lesson where you train a model to clean up the ocean. You can start without an account.</p>
+            <p class="level">Ages 8–12 · US grades 3–6 · UK KS2–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 8–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://code.org/en-US/artificial-intelligence" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">💡</span>
+            <h3>Code.org AI</h3>
+            <p>Lessons about what AI is, and what it is not, written for students.</p>
+            <p class="level">Ages 8–18 · US grades 3–12 · UK KS2–KS5</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 8–18</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://dayofai.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">📅</span>
+            <h3>Day of AI</h3>
+            <p>Classroom lessons about AI from MIT RAISE. Do them with a teacher or another grown-up.</p>
+            <p class="level">Ages 8–18 · US grades 3–12 · UK KS2–KS5</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 8–18</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://experience-ai.org/en/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🧪</span>
+            <h3>Experience AI</h3>
+            <p>Lessons for ages 11 to 14 from the Raspberry Pi Foundation. Plan to do them with a grown-up.</p>
+            <p class="level">Ages 11–14 · US grades 6–8 · UK KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 11–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://machinelearningforkids.co.uk/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🦊</span>
+            <h3>Machine Learning for Kids</h3>
+            <p>Train a model, then use it in Scratch. A grown-up creates the account and any keys.</p>
+            <p class="level">Ages 7–14 · US grades 2–8 · UK KS2–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 7–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big" href="https://kidgeni.com/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">✨</span>
+            <h3>KidGeni</h3>
+            <p>Stories and pictures made with AI. A grown-up sets up the account and should read the rules first.</p>
+            <p class="level">Ages 5–12 · US grades K–6 · UK KS1–KS2</p>
+            <ul class="tags"><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 5–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
+    </section>
+
+    <section id="feelings" data-section aria-labelledby="feelings-title">
+      <h2 id="feelings-title">Feeling good and staying safe</h2>
+      <p class="section-intro">Calm ideas and safety lessons. If you need a person right now, use the help box under the cards.</p>
+      <div class="grid">
+          <a class="card" data-ages="little" href="https://sesameworkshop.org/resources/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">💛</span>
+            <h3>Sesame Workshop</h3>
+            <p>Free videos and printable ideas about feelings, care, and hard changes. Best opened with a grown-up.</p>
+            <p class="level">Ages 3–6 · US grades pre-K–1 · UK EYFS–KS1</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 3–6</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://www.smilingmind.com.au/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🌬️</span>
+            <h3>Smiling Mind</h3>
+            <p>Calm breathing and mindfulness. A grown-up can open the free app or the website with you.</p>
+            <p class="level">Ages 3–18 · US grades pre-K–12 · UK EYFS–KS5</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-app">App</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 3–18</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big" href="https://beinternetawesome.withgoogle.com/en_us" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🛡️</span>
+            <h3>Be Internet Awesome</h3>
+            <p>Games and lessons from Google about being kind, careful, and brave online.</p>
+            <p class="level">Ages 7–12 · US grades 2–6 · UK KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 7–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="big teen" href="https://www.missingkids.org/netsmartz/home" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🚦</span>
+            <h3>NetSmartz</h3>
+            <p>Safety lessons from the National Center for Missing &amp; Exploited Children. Pick the age band with a grown-up. Some topics are serious.</p>
+            <p class="level">Ages 5–17 · US grades K–12 · UK KS1–KS4</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 5–17</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      
+      <aside class="help-box" id="help-now" aria-labelledby="help-now-title">
+        <h3 id="help-now-title">If you need to talk to someone</h3>
+        <p>If someone is hurting you, or if you feel too sad or scared, tell a grown-up you trust. You can also reach help yourself:</p>
+        <ul>
+          <li>In the United States, call Childhelp at <a href="tel:+18004224453">1-800-422-4453</a>. <a href="https://childhelphotline.org/" target="_blank" rel="noopener noreferrer">childhelphotline.org<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li>In the United Kingdom, call Childline free at <a href="tel:08001111">0800 1111</a>. The call does not show on the phone bill. <a href="https://www.childline.org.uk/" target="_blank" rel="noopener noreferrer">childline.org.uk<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li>In the United States, if you might hurt yourself, call or text <a href="tel:988">988</a>. You can also text HOME to 741741. <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">988 Lifeline<span class="visually-hidden"> (opens in a new tab)</span></a> · <a href="https://www.crisistextline.org/" target="_blank" rel="noopener noreferrer">Crisis Text Line<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+      </aside>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
+    </section>
+
+    <section id="faith" data-section aria-labelledby="faith-title">
+      <h2 id="faith-title">Faith</h2>
+      <p class="section-intro">The verse at the top of this page is for every age. These links are extra Bible stories for younger children.</p>
+      <div class="grid">
+          <a class="card" data-ages="little" href="https://www.youversion.com/bible-app-for-kids" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">📖</span>
+            <h3>Bible App for Kids</h3>
+            <p>A free YouVersion app with Bible stories you can tap through. A grown-up downloads it. Made for about ages 4 to 8.</p>
+            <p class="level">Ages 4–8 · US grades pre-K–2 · UK EYFS–KS1</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-app">App</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 4–8</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little" href="https://bibleappforkids.com/parents" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🖍️</span>
+            <h3>Bible App for Kids printables</h3>
+            <p>Free coloring pages and story extras to do with a grown-up.</p>
+            <p class="level">Ages 4–8 · US grades pre-K–2 · UK EYFS–KS1</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-ask">Ask a grown-up</li><li class="tag-age">Ages 4–8</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
+    </section>
+
+    <section id="languages" data-section aria-labelledby="languages-title">
+      <h2 id="languages-title">Other languages</h2>
+      <p class="section-intro">Free stories in many languages. These open a language shelf, not a second copy of the reading list.</p>
+      <div class="grid">
+          <a class="card" data-ages="little big teen" href="https://storyweaver.org.in/stories" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🌐</span>
+            <h3>StoryWeaver in your language</h3>
+            <p>Open the story finder and choose a language before you pick a book.</p>
+            <p class="level">Ages 3–12 · US grades pre-K–6 · UK EYFS–KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 3–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big" href="https://bloomlibrary.org/browse" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">📚</span>
+            <h3>Bloom by language</h3>
+            <p>Browse Bloom Library and filter until you see a language you know.</p>
+            <p class="level">Ages 3–12 · US grades pre-K–6 · UK EYFS–KS2</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 3–12</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://storybookscanada.ca/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🍁</span>
+            <h3>Storybooks Canada</h3>
+            <p>The same stories in many languages, including Indigenous languages.</p>
+            <p class="level">Ages 5–14 · US grades K–8 · UK KS1–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://global-asp.github.io/storybooks-spanish/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🇪🇸</span>
+            <h3>Storybooks in Spanish</h3>
+            <p>Free illustrated stories in Spanish from the Global Storybooks project.</p>
+            <p class="level">Ages 5–14 · US grades K–8 · UK KS1–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://global-asp.github.io/storybooks-french/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🇫🇷</span>
+            <h3>Storybooks in French</h3>
+            <p>Free illustrated stories in French from the Global Storybooks project.</p>
+            <p class="level">Ages 5–14 · US grades K–8 · UK KS1–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://global-asp.github.io/storybooks-swahili/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🇰🇪</span>
+            <h3>Hadithi za Kiswahili</h3>
+            <p>Free illustrated stories in Swahili from the Global Storybooks project.</p>
+            <p class="level">Ages 5–14 · US grades K–8 · UK KS1–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+          <a class="card" data-ages="little big teen" href="https://englishstorybooks.org/" target="_blank" rel="noopener noreferrer">
+            <span class="emoji" aria-hidden="true">🇬🇧</span>
+            <h3>Multilingual English stories</h3>
+            <p>English stories with support in other languages, for readers and language learners.</p>
+            <p class="level">Ages 5–14 · US grades K–8 · UK KS1–KS3</p>
+            <ul class="tags"><li class="tag-free">Free</li><li class="tag-ads">No ads</li><li class="tag-age">Ages 5–14</li></ul>
+            <span class="visually-hidden">Opens in a new tab.</span>
+          </a>
+      </div>
+      <p class="empty" data-empty hidden>Nothing on this shelf for the age you picked. Choose All ages to see everything.</p>
+    </section>
+
+    <section id="grown-ups" class="prose" aria-labelledby="grown-ups-title">
+      <h2 id="grown-ups-title">For grown-ups</h2>
+      <h3>What this site is</h3>
+      <p>12 Dreamers is a free static shelf of learning links and a daily Bible verse for children in hard situations, including orphans, children in foster care, and any child who needs a kind place to learn. It is written to any child: you are loved.</p>
+      <p>There is no build step, no account, and no app to install for the site itself. It is plain HTML, CSS, and a little JavaScript.</p>
+      <h3>What it collects</h3>
+      <p>This website collects nothing. It does not set cookies. It does not use ads, analytics, or tracking pixels. It does not load third-party scripts, fonts, or images. It does not send a child’s activity to a server, because there is no server-side app.</p>
+      <p>If a child taps “I did it!” or chooses an age, that note is saved only in this browser’s localStorage, on this device. Clearing the browser’s site data removes it. Nobody else can see those stars.</p>
+      <h3>Links that need a grown-up</h3>
+      <ul>
+        <li>Cards tagged “Ask a grown-up” need a parent, carer, teacher, or other trusted adult. That includes installing an app, using a library card, or creating an account.</li>
+        <li>Scratch: a grown-up creates the account for anyone under 13.</li>
+        <li>Code.org: puzzles work without an account. Under 13, a grown-up creates an account if progress should be saved.</li>
+        <li>Zearn, Libby, KidGeni, and Machine Learning for Kids need a grown-up to set them up.</li>
+        <li>Khan Academy lessons are free, and a child can start without an account. Khanmigo, the AI tutor, is paid and a parent or teacher turns it on. It is not a second free Khan Academy.</li>
+        <li>Mathsframe’s games marked free can be played as they are. Some worksheets and extras are paid.</li>
+        <li>Day of AI and Experience AI are classroom lessons. Do them together.</li>
+        <li>Teachable Machine can ask to use a camera or microphone.</li>
+        <li>ChatGPT is not listed for children. Its rules say 13+, with a parent.</li>
+        <li>Some tools are made by companies such as Google. Their own privacy rules apply once a child leaves this page. A grown-up should stay nearby the first time.</li>
+      </ul>
+      <h3>Help lines</h3>
+      <ul>
+        <li><strong>Childhelp</strong> (United States), if a child is being hurt or if you need advice: call <a href="tel:+18004224453">1-800-422-4453</a>. <a href="https://childhelphotline.org/" target="_blank" rel="noopener noreferrer">childhelphotline.org<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        <li><strong>988 Suicide &amp; Crisis Lifeline</strong> (United States): call or text <a href="tel:988">988</a>. <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">988lifeline.org<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        <li><strong>Crisis Text Line</strong> (United States): text HOME to 741741. <a href="https://www.crisistextline.org/" target="_blank" rel="noopener noreferrer">crisistextline.org<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        <li><strong>Childline</strong> (United Kingdom): call <a href="tel:08001111">0800 1111</a> or visit <a href="https://www.childline.org.uk/" target="_blank" rel="noopener noreferrer">childline.org.uk<span class="visually-hidden"> (opens in a new tab)</span></a>. Checked on the official Childline site, a free NSPCC service: the number is 0800 1111, it is free to call, and the call does not show on the phone bill.</li>
+        <li><strong>Common Sense Media</strong>, for grown-ups checking other apps, games, and shows before a child uses them: <a href="https://www.commonsensemedia.org/" target="_blank" rel="noopener noreferrer">commonsensemedia.org<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+      </ul>
+      <h3>About the verses</h3>
+      <p>The daily verse is chosen in the browser from a list stored on this site, using the device’s date, so it changes once a day without an account or a server. The words are from the Berean Standard Bible, which is in the public domain. A title line such as “A Psalm of David” is left off when it would get in the way. LORD is a name for God. The short note under the verse is a devotional written for a child, not a translation.</p>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>12 Dreamers is a free learning shelf for any child. You are loved.</p>
+    <p><a href="#grown-ups">For grown-ups</a> · <a href="#top">Back to the top</a></p>
+    <p>Bible verses: Berean Standard Bible, public domain.</p>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
