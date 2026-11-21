@@ -142,6 +142,37 @@ svg {
   padding: 1.25rem 0 0.5rem;
 }
 
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem 1rem;
+  margin: 0.1rem 0 0.85rem;
+  min-width: 0;
+}
+
+.masthead h1 {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.logo-link {
+  flex: 0 0 auto;
+  display: block;
+  line-height: 0;
+  border-radius: 22%;
+}
+
+.logo-link img {
+  display: block;
+  width: clamp(4rem, 16vw, 5.75rem);
+  height: auto;
+  aspect-ratio: 163 / 161;
+  border: 0;
+  border-radius: 22%;
+  box-shadow: var(--shadow);
+}
+
 h1,
 h2,
 h3,
