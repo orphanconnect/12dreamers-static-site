@@ -421,6 +421,25 @@ blockquote p {
   color: var(--rose);
 }
 
+.tags li.tag-beginner {
+  background: #efe6f7;
+  color: #3b1d4a;
+}
+
+.tags li.tag-code {
+  background: #e3eef0;
+  color: #12343a;
+}
+
+.shelf-group + .shelf-group {
+  margin-top: 1.6rem;
+}
+
+.shelf-group h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+}
+
 .day {
   display: flex;
   flex-direction: column;

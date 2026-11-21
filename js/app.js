@@ -139,6 +139,13 @@
       var ages = (card.getAttribute("data-ages") || "").split(/\s+/);
       card.hidden = !(age === "all" || ages.indexOf(age) !== -1);
     });
+    document.querySelectorAll("[data-group]").forEach(function (group) {
+      var visible = 0;
+      group.querySelectorAll("[data-ages]").forEach(function (card) {
+        if (!card.hidden) visible += 1;
+      });
+      group.hidden = visible === 0;
+    });
     document.querySelectorAll("[data-section]").forEach(function (section) {
       var visible = 0;
       section.querySelectorAll("[data-ages]").forEach(function (card) {
